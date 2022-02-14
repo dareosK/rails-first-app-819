@@ -10,6 +10,19 @@
   </head>
 
   <body>
+  <%# THIS IS THE GLOBAL LAYOUT OF YOUR APP %>
+  <%# HERE YOU WILL ADD HTML ELEMENTS YOU WISH TO APPEAR IN ALL PAGES%>
+  <%# JUST LIKE THIS NAVBAR %>
+    <nav>
+      <ul>
+        <li><%= link_to "Homepage", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
+    <footer style="border-top: 1px solid black;">
+      <p>This is a very simple footer!</p>
+    </footer>
   </body>
 </html>

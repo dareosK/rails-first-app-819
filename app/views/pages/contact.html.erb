@@ -1,0 +1,16 @@
+<h1>Contacts</h1>
+<%# By submitting this form you are going to create KEY=VALUE pairs in the Params object %>
+<%# The name of the key comes from the name="member" of your input (line 6). %>
+<%# The value is whatever the user queries for %>
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?" value="<%= params[:member] %>">
+  <input type="submit">
+</form>
+<h2>Meet our team members!</h2>
+<%# the @members variable is available to us from the Controller! Check Pages#Contact action! %>
+<ol>
+  <%# iterate through the members and create an <li> for each %>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ol>
