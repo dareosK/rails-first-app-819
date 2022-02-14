@@ -12,6 +12,12 @@ class PagesController < ApplicationController
     end
     # # To break your code and inspect everything available to you use:
     # raise
+
+    # A LITTLE SIDENOTE:
+    # Inside your controllers you can put whatever logic you wish to,
+    # of course depending on the feature tht you are asked to build.
+    # NOW we are starting to apply all the skills we learned in the first Ruby weeks
+    # in order to build real-life features :)
   end
 
   def home
